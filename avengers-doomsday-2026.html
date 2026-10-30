@@ -4,17 +4,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Avengers: Doomsday (2026) - Movie Info | CINEMAX ZONE</title>
+<title>Avengers: Doomsday (2026) - Cast, Trailer & Movie Info | CINEMAX ZONE</title>
 
-<meta name="description" content="Discover Avengers: Doomsday (2026), including movie details, cast, synopsis, trailer and latest information at CINEMAX ZONE.">
+<meta name="description" content="Explore Avengers: Doomsday (2026), starring Robert Downey Jr. as Doctor Doom. Discover the cast, movie overview, release date and official trailer.">
 
 <meta name="robots" content="index, follow">
 
-<meta property="og:title" content="Avengers: Doomsday (2026) - CINEMAX ZONE">
-<meta property="og:description" content="Explore Avengers: Doomsday (2026), movie details, cast and trailer.">
+<meta property="og:title" content="Avengers: Doomsday (2026) | CINEMAX ZONE">
+<meta property="og:description" content="Discover Avengers: Doomsday featuring Robert Downey Jr. as Doctor Doom.">
 <meta property="og:type" content="website">
+<meta property="og:image" content="https://lumiere-a.akamaihd.net/v1/images/g_disneymovies_avengersdoomsday_dr_doom_6cc246af.jpeg?region=0%2C0%2C1300%2C730">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
+
 * {
     margin: 0;
     padding: 0;
@@ -22,226 +28,854 @@
 }
 
 body {
-    background: #080808;
-    color: #fff;
-    font-family: Arial, sans-serif;
+    background: #07090c;
+    color: #f5f5f5;
+    font-family: 'Inter', Arial, sans-serif;
     line-height: 1.7;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* HEADER */
+
 header {
-    background: #111;
-    padding: 20px;
-    border-bottom: 1px solid #292929;
+    background: #080a0d;
+    border-bottom: 1px solid #25282d;
+    position: relative;
+    z-index: 10;
+}
+
+.navbar {
+    max-width: 1250px;
+    margin: auto;
+    padding: 17px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .logo {
-    color: #e50914;
-    font-size: 25px;
-    font-weight: bold;
-    text-decoration: none;
+    font-size: 24px;
+    font-weight: 800;
+    white-space: nowrap;
 }
+
+.logo span {
+    color: #ed1725;
+}
+
+.logo-icon {
+    color: #ed1725;
+    margin-right: 6px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #ddd;
+}
+
+.nav-links a:hover {
+    color: #ed1725;
+}
+
+/* TOP AD */
+
+.ad-area {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 5px;
+    min-height: 120px;
+    background: #07090c;
+    overflow: hidden;
+}
+
+.desktop-ad {
+    display: block;
+    width: 728px;
+    height: 90px;
+}
+
+.mobile-ad {
+    display: none;
+    width: 320px;
+    height: 50px;
+}
+
+@media(max-width: 767px) {
+
+    .desktop-ad {
+        display: none;
+    }
+
+    .mobile-ad {
+        display: block;
+    }
+
+    .ad-area {
+        min-height: 75px;
+        padding: 12px 0;
+    }
+
+}
+
+/* HERO */
+
+.hero {
+    min-height: 390px;
+    background-image:
+        linear-gradient(90deg, rgba(0,0,0,.25), rgba(0,0,0,.15)),
+        url('https://lumiere-a.akamaihd.net/v1/images/g_disneymovies_avengersdoomsday_dr_doom_6cc246af.jpeg?region=0%2C0%2C1300%2C730');
+
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding: 45px 25px;
+}
+
+.hero-label {
+    color: #a7d49c;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 4px;
+}
+
+.hero h1 {
+    font-size: clamp(35px, 6vw, 65px);
+    line-height: 1.1;
+    max-width: 650px;
+    margin: 15px 0;
+    text-shadow: 0 4px 15px #000;
+}
+
+.hero h1 span {
+    color: #9bc78b;
+}
+
+.hero p {
+    color: #ddd;
+    font-size: 14px;
+}
+
+/* MAIN */
 
 .container {
-    max-width: 1000px;
+    max-width: 1150px;
     margin: auto;
-    padding: 25px 18px;
+    padding: 25px 22px;
 }
 
-.back {
-    display: inline-block;
-    color: #fff;
-    text-decoration: none;
-    background: #252525;
-    padding: 10px 16px;
-    border-radius: 6px;
+.breadcrumb {
+    color: #888;
+    font-size: 12px;
     margin-bottom: 25px;
 }
 
-.movie {
-    display: flex;
-    gap: 25px;
-    align-items: flex-start;
-    flex-wrap: wrap;
+.breadcrumb span {
+    color: #ed1725;
+}
+
+/* MOVIE DETAILS */
+
+.movie-section {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 35px;
+    align-items: start;
 }
 
 .poster {
-    width: 280px;
-    max-width: 100%;
+    width: 100%;
     border-radius: 10px;
-    box-shadow: 0 5px 25px rgba(229,9,20,0.2);
+    overflow: hidden;
+    border: 1px solid #30353c;
+    box-shadow: 0 10px 35px rgba(0,0,0,.5);
+}
+
+.poster img {
+    display: block;
+    width: 100%;
 }
 
 .movie-info {
-    flex: 1;
-    min-width: 250px;
-}
-
-h1 {
-    font-size: 32px;
-    margin-bottom: 12px;
+    padding-top: 5px;
 }
 
 .badge {
     display: inline-block;
-    background: #e50914;
+    background: #17251a;
+    color: #a7d49c;
+    border: 1px solid #34563a;
     padding: 5px 12px;
     border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.movie-info h2 {
+    font-size: clamp(26px, 4vw, 38px);
+    margin: 15px 0 8px;
+    line-height: 1.25;
+}
+
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    color: #b5b5b5;
     font-size: 13px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
-.details {
-    color: #bbb;
-    margin-bottom: 15px;
+.meta span {
+    border-right: 1px solid #444;
+    padding-right: 12px;
 }
 
-h2 {
-    font-size: 23px;
-    margin: 30px 0 12px;
-    border-left: 4px solid #e50914;
-    padding-left: 12px;
+.description {
+    color: #c7c7c7;
+    font-size: 14px;
+    margin-bottom: 22px;
 }
 
-p {
-    color: #ccc;
+/* BUTTONS */
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
-.cast {
-    background: #151515;
-    padding: 16px;
-    border-radius: 8px;
-    margin-top: 12px;
-}
-
-.trailer {
-    background: #151515;
-    padding: 25px;
-    border-radius: 8px;
-    text-align: center;
-}
-
-.trailer a {
+.btn {
     display: inline-block;
-    background: #e50914;
-    color: white;
-    text-decoration: none;
     padding: 12px 22px;
     border-radius: 6px;
-    margin-top: 12px;
+    font-size: 13px;
+    font-weight: 700;
+    transition: .2s;
+    cursor: pointer;
 }
+
+.btn-red {
+    background: #ed1725;
+    color: white;
+    border: none;
+}
+
+.btn-red:hover {
+    background: #bd101b;
+}
+
+.btn-dark {
+    background: #11151a;
+    border: 1px solid #555;
+    color: white;
+}
+
+.btn-dark:hover {
+    border-color: #ed1725;
+}
+
+/* INFORMATION */
+
+.facts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    border-top: 1px solid #292d32;
+    border-bottom: 1px solid #292d32;
+    padding: 22px 0;
+    margin-top: 30px;
+}
+
+.fact {
+    display: flex;
+    flex-direction: column;
+}
+
+.fact small {
+    color: #888;
+    font-size: 11px;
+}
+
+.fact strong {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* SECTION */
+
+.section {
+    margin-top: 38px;
+}
+
+.section-title {
+    font-size: 22px;
+    font-weight: 800;
+    border-left: 4px solid #ed1725;
+    padding-left: 12px;
+    margin-bottom: 20px;
+}
+
+.overview {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 35px;
+}
+
+.overview p {
+    color: #c3c3c3;
+    font-size: 14px;
+}
+
+.quote {
+    border-left: 1px solid #555;
+    padding: 15px 25px;
+    color: #aaa;
+    font-size: 17px;
+    font-style: italic;
+}
+
+/* CAST */
+
+.cast-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.cast-card {
+    background: #12161b;
+    border: 1px solid #272d34;
+    border-radius: 8px;
+    padding: 17px 12px;
+    text-align: center;
+}
+
+.cast-card strong {
+    display: block;
+    font-size: 12px;
+}
+
+.cast-card small {
+    color: #999;
+    font-size: 11px;
+}
+
+/* DIRECT LINK PROMOTION */
+
+.promo {
+    margin-top: 40px;
+    padding: 30px 20px;
+    border: 1px solid #34563a;
+    background:
+        linear-gradient(120deg, #102018, #10151b);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.promo h3 {
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.promo p {
+    color: #aaa;
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+/* TRAILER */
+
+.trailer-box {
+    background: #11161c;
+    border: 1px solid #303840;
+    border-radius: 10px;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.trailer-box p {
+    color: #aaa;
+    font-size: 13px;
+}
+
+/* FOOTER */
 
 footer {
-    text-align: center;
-    padding: 25px;
-    color: #777;
-    border-top: 1px solid #222;
-    margin-top: 40px;
+    margin-top: 55px;
+    border-top: 1px solid #292d32;
+    background: #080a0d;
+    padding: 30px 20px;
 }
 
-@media(max-width:600px) {
-    .movie {
-        flex-direction: column;
+.footer-inner {
+    max-width: 1150px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+footer p {
+    color: #777;
+    font-size: 12px;
+}
+
+/* MOBILE */
+
+@media(max-width: 767px) {
+
+    .navbar {
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 19px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        min-height: 270px;
+        background-position: center;
+    }
+
+    .hero-content {
+        padding: 30px 18px;
+    }
+
+    .container {
+        padding: 20px 15px;
+    }
+
+    .movie-section {
+        grid-template-columns: 1fr;
+        gap: 22px;
     }
 
     .poster {
-        width: 100%;
-        max-width: 300px;
+        max-width: 240px;
+        margin: auto;
     }
 
-    h1 {
+    .movie-info h2 {
         font-size: 27px;
     }
+
+    .facts {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .overview {
+        grid-template-columns: 1fr;
+    }
+
+    .cast-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .trailer-box {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
 }
+
 </style>
 </head>
 
 <body>
 
+<!-- HEADER -->
+
 <header>
-    <a href="index.html" class="logo">CINEMAX ZONE</a>
+<nav class="navbar">
+
+<a href="index.html" class="logo">
+<span class="logo-icon">▶</span>
+CINEMAX <span>ZONE</span>
+</a>
+
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="index.html">Movies</a>
+<a href="index.html">TV Series</a>
+<a href="index.html">Genres</a>
+<a href="index.html">About</a>
+</div>
+
+</nav>
 </header>
+
+
+<!-- RESPONSIVE NATIVE BANNER -->
+
+<div class="ad-area">
+
+    <!-- DESKTOP 728x90 -->
+
+    <div class="desktop-ad">
+
+        <script>
+        atOptions = {
+            'key' : '25febf1e3e00d46b7bd8c05a1f1673bc',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+        </script>
+
+        <script src="https://www.highrevenueformat.com/25febf1e3e00d46b7bd8c05a1f1673bc/invoke.js"></script>
+
+    </div>
+
+
+    <!-- MOBILE 320x50 -->
+
+    <div class="mobile-ad">
+
+        <script>
+        atOptions = {
+            'key' : '8366863b7518ae6398abbc3784dc0f7e',
+            'format' : 'iframe',
+            'height' : 50,
+            'width' : 320,
+            'params' : {}
+        };
+        </script>
+
+        <script src="https://www.highrevenueformat.com/8366863b7518ae6398abbc3784dc0f7e/invoke.js"></script>
+
+    </div>
+
+</div>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="hero-label">
+MARVEL STUDIOS PRESENTS
+</div>
+
+<h1>
+AVENGERS:<br>
+<span>DOOMSDAY</span>
+</h1>
+
+<p>
+Robert Downey Jr. returns as Victor von Doom.
+<br>
+Only in theaters December 18, 2026.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- MAIN -->
 
 <main class="container">
 
-<a href="index.html" class="back">← Back to Home</a>
+<div class="breadcrumb">
+Home &nbsp; › &nbsp; Movies &nbsp; › &nbsp;
+<span>Avengers: Doomsday</span>
+</div>
 
-<section class="movie">
+
+<!-- MOVIE DETAILS -->
+
+<section class="movie-section">
+
+<div class="poster">
 
 <img
-class="poster"
-src="https://image.tmdb.org/t/p/w500/8eifdha9GQeZAkexgtD45546XKx.jpg"
-alt="Avengers Doomsday Movie Poster">
+src="https://lumiere-a.akamaihd.net/v1/images/g_movies_avengersdoomsday_d23update_poster_8c2ab836.jpeg?region=0%2C0%2C1300%2C730"
+alt="Avengers Doomsday official poster">
+
+</div>
+
 
 <div class="movie-info">
 
 <span class="badge">UPCOMING MOVIE</span>
 
-<h1>Avengers: Doomsday (2026)</h1>
+<h2>Avengers: Doomsday (2026)</h2>
 
-<div class="details">
-2026 | Action | Adventure | Science Fiction
+<div class="meta">
+<span>2026</span>
+<span>Action</span>
+<span>Adventure</span>
+<span>Sci-Fi</span>
 </div>
 
-<p>
-Avengers: Doomsday is an upcoming Marvel Studios superhero movie
-and part of the Marvel Cinematic Universe.
-The film brings together a new generation of heroes
-and familiar characters in an extraordinary adventure.
+<p class="description">
+Avengers: Doomsday brings together beloved heroes
+from three distinct universes as they face an
+existential threat unlike anything they have
+encountered before.
+
+Robert Downey Jr. returns to the Marvel Cinematic
+Universe as Victor von Doom, also known as Doctor Doom.
+A new chapter of the Marvel universe begins.
 </p>
 
-<p>
-Stay tuned to CINEMAX ZONE for movie information,
-updates, cast details and official trailers.
-</p>
+
+<div class="buttons">
+
+<button class="btn btn-red" onclick="watchTrailer()">
+▶ &nbsp; WATCH TRAILER
+</button>
+
+<a class="btn btn-dark" href="#overview">
+＋ &nbsp; EXPLORE MOVIE
+</a>
 
 </div>
+
+
+</div>
+
 </section>
 
-<h2>Movie Overview</h2>
+
+<!-- FACTS -->
+
+<div class="facts">
+
+<div class="fact">
+<small>DIRECTORS</small>
+<strong>Anthony Russo & Joe Russo</strong>
+</div>
+
+<div class="fact">
+<small>STUDIO</small>
+<strong>Marvel Studios</strong>
+</div>
+
+<div class="fact">
+<small>RELEASE DATE</small>
+<strong>December 18, 2026</strong>
+</div>
+
+</div>
+
+
+<!-- OVERVIEW -->
+
+<section class="section" id="overview">
+
+<h3 class="section-title">Movie Overview</h3>
+
+<div class="overview">
 
 <p>
-Avengers: Doomsday is one of Marvel Studios' highly anticipated
-superhero projects. The movie is expected to expand the Marvel
-Cinematic Universe with an epic story involving powerful heroes
-and a major new threat.
+In Avengers: Doomsday, heroes from different
+universes are brought together to confront a
+dangerous new threat.
+
+With Robert Downey Jr. taking on the role of
+Victor von Doom, the Marvel Cinematic Universe
+enters a dramatic new chapter.
+
+The film is directed by Anthony Russo and
+Joe Russo and written by Stephen McFeely.
 </p>
 
-<h2>Movie Information</h2>
-
-<div class="cast">
-<p><strong>Movie:</strong> Avengers: Doomsday</p>
-<p><strong>Release Year:</strong> 2026</p>
-<p><strong>Genre:</strong> Action, Adventure, Sci-Fi</p>
-<p><strong>Studio:</strong> Marvel Studios</p>
-<p><strong>Director:</strong> Anthony Russo and Joe Russo</p>
+<div class="quote">
+"The greatest threat is not always the one
+we can see. Sometimes it comes from the
+darkest corners of the multiverse."
 </div>
 
-<h2>Cast</h2>
-
-<div class="cast">
-<p>Robert Downey Jr.</p>
-<p>Chris Hemsworth</p>
-<p>Anthony Mackie</p>
-<p>Vanessa Kirby</p>
-<p>Pedro Pascal</p>
 </div>
 
-<h2>Official Trailer</h2>
+</section>
 
-<div class="trailer">
-<p>Watch the latest official Avengers: Doomsday trailer.</p>
 
-<a href="https://www.youtube.com/results?search_query=Avengers+Doomsday+Official+Trailer"
-target="_blank" rel="noopener">
-▶ Watch Trailer
+<!-- CAST -->
+
+<section class="section">
+
+<h3 class="section-title">Main Cast</h3>
+
+<div class="cast-grid">
+
+<div class="cast-card">
+<strong>Robert Downey Jr.</strong>
+<small>Victor von Doom</small>
+</div>
+
+<div class="cast-card">
+<strong>Chris Hemsworth</strong>
+<small>Thor</small>
+</div>
+
+<div class="cast-card">
+<strong>Chris Evans</strong>
+<small>Steve Rogers</small>
+</div>
+
+<div class="cast-card">
+<strong>Pedro Pascal</strong>
+<small>Reed Richards</small>
+</div>
+
+<div class="cast-card">
+<strong>Anthony Mackie</strong>
+<small>Sam Wilson</small>
+</div>
+
+<div class="cast-card">
+<strong>Vanessa Kirby</strong>
+<small>Sue Storm</small>
+</div>
+
+<div class="cast-card">
+<strong>Paul Rudd</strong>
+<small>Scott Lang</small>
+</div>
+
+<div class="cast-card">
+<strong>Florence Pugh</strong>
+<small>Yelena Belova</small>
+</div>
+
+<div class="cast-card">
+<strong>Tom Hiddleston</strong>
+<small>Loki</small>
+</div>
+
+<div class="cast-card">
+<strong>Channing Tatum</strong>
+<small>Gambit</small>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PROMOTION -->
+
+<section class="promo">
+
+<h3>DISCOVER MORE MOVIES</h3>
+
+<p>
+Explore more exciting entertainment and discover
+your next favorite movie at CINEMAX ZONE.
+</p>
+
+<a href="index.html" class="btn btn-red">
+EXPLORE CINEMAX ZONE
 </a>
+
+</section>
+
+
+<!-- TRAILER -->
+
+<section class="section">
+
+<h3 class="section-title">Official Trailer</h3>
+
+<div class="trailer-box">
+
+<div>
+<strong>Avengers: Doomsday (2026)</strong>
+<p>
+Watch the official trailer from Marvel Studios.
+</p>
 </div>
+
+<button class="btn btn-red" onclick="watchTrailer()">
+▶ &nbsp; WATCH TRAILER
+</button>
+
+</div>
+
+</section>
+
 
 </main>
 
+
+<!-- FOOTER -->
+
 <footer>
-<p>© 2026 CINEMAX ZONE. All Rights Reserved.</p>
+
+<div class="footer-inner">
+
+<a href="index.html" class="logo">
+▶ CINEMAX <span>ZONE</span>
+</a>
+
+<p>
+© 2026 CINEMAX ZONE. All Rights Reserved.
+</p>
+
+</div>
+
 </footer>
+
+
+<!-- WATCH TRAILER + DIRECT LINK -->
+
+<script>
+
+function watchTrailer() {
+
+    const directLink =
+    "https://www.profitableratecpmnetwork.com/r725bw3t?key=341f755887304905cfaf00b2e74a037f";
+
+    const officialTrailer =
+    "https://video.disney.com/watch/avengers-doomsday-official-trailer-in-theaters-december-18-6570e5fd34d02c78224df0db";
+
+    // Open sponsor link in a new tab
+    window.open(directLink, "_blank", "noopener");
+
+    // Open official trailer in current tab
+    window.location.href = officialTrailer;
+
+}
+
+</script>
 
 </body>
 </html>
