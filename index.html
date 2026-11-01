@@ -401,6 +401,14 @@ const DIRECT_LINK =
 
 const movies2026=[
   {title:"Avengers: Doomsday",year:"2026",genre:"action",rating:"8.8",image:"https://filmartgallery.com/cdn/shop/files/Avengers-Doomsday-Vintage-Movie-Poster-Original_5000x.jpg?v=1771985952",trailer:"https://www.youtube.com/embed/fxNh27fRdYA?autoplay=1&rel=0"},
+  {
+  title:"Godzilla Minus Zero",
+  year:"2026",
+  genre:"action",
+  rating:"8.9",
+  image:"https://godzilla.com/cdn/shop/files/GMZ_KV2_Web_2025x3000_GKIDS-wIMAX_1.jpg?v=1788560923&width=700",
+  pageUrl:"https://cinemaxzone.bond/godzilla-minus-zero.html"
+},
   {title:"The Odyssey",year:"2026",genre:"adventure",rating:"8.4",image:"https://dx35vtwkllhj9.cloudfront.net/universalstudios/the-odyssey/images/regions/ca/onesheet.jpg",trailer:"https://www.youtube.com/embed/f_bKjZeJBBI?autoplay=1&rel=0"},
   {title:"Project Hail Mary",year:"2026",genre:"sci-fi",rating:"8.6",image:"https://m.media-amazon.com/images/M/MV5BNTkwNzJiYTctNzI3NC00NjE1LTlhYjktY2Q5MTdmMWFmNzcxXkEyXkFqcGc%40._V1_QL75_UX5530_.jpg",trailer:"https://www.youtube.com/embed/P0XN3-n-2Lo?autoplay=1&rel=0"},
   {title:"Supergirl",year:"2026",genre:"action",rating:"8.1",image:"https://www.cinemaclock.com/images/posters/1000x1500/27/supergirl-2026-orig-poster.jpg",trailer:"https://www.youtube.com/embed/s1-pfiVMKAs?autoplay=1&rel=0"},
@@ -425,22 +433,35 @@ const popular=[...movies2026.slice(0,6),...classic2007.slice(0,4)];
 
 function card(m){
   const title=m.title.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+
   const trailerButton=m.trailer
     ? `<button class="trailer" data-trailer="${m.trailer}" data-title="${title}">▶ Watch Trailer</button>`
     : `<div class="no-trailer">Trailer unavailable</div>`;
 
+  const posterOpen=m.pageUrl
+    ? `<a href="${m.pageUrl}" aria-label="Read ${title} review">`
+    : "";
+
+  const posterClose=m.pageUrl ? `</a>` : "";
+
+  const reviewButton=m.pageUrl
+    ? `<a href="${m.pageUrl}" class="trailer" style="display:block;text-align:center;text-decoration:none;background:#e50914">READ REVIEW →</a>`
+    : "";
+
   return `
     <article class="card" data-title="${m.title.toLowerCase()}" data-genre="${m.genre}">
       <div class="poster">
+        ${posterOpen}
         <img src="${m.image}" alt="${title} poster" loading="lazy"
              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
         <div class="fallback">${title}</div>
+        ${posterClose}
         <div class="poster-title">${title}</div>
       </div>
       <div class="info">
         <div class="name">${title}</div>
         <div class="details"><span>${m.year}</span><span>•</span><span class="star">★ ${m.rating}</span></div>
-        ${trailerButton}
+        ${m.pageUrl ? reviewButton : trailerButton}
       </div>
     </article>`;
 }
