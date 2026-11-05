@@ -424,6 +424,15 @@ const DIRECT_LINK =
 const movies2026=[
   {title:"Avengers: Doomsday",year:"2026",genre:"action",rating:"8.8",image:"https://filmartgallery.com/cdn/shop/files/Avengers-Doomsday-Vintage-Movie-Poster-Original_5000x.jpg?v=1771985952",trailer:"https://www.youtube.com/embed/fxNh27fRdYA?autoplay=1&rel=0"},
   {
+  title:"The Hunger Games: Sunrise on the Reaping",
+  year:"2026",
+  genre:"action",
+  rating:"8.7",
+  image:"https://images.fandango.com/ImageRenderer/820/0/redesign/static/img/default_poster.png/0/images/masterrepository/fandango/248326/thehungergames-sunriseonthereaping-presale-posterart.jpg",
+  pageUrl:"https://cinemaxzone.bond/hunger-games-sunrise-on-the-reaping.html",
+  trailer:"https://www.youtube.com/embed/fS35YSjopjE?autoplay=1&rel=0"
+},
+  {
   title:"Godzilla Minus Zero",
   year:"2026",
   genre:"action",
@@ -466,9 +475,10 @@ function card(m){
 
   const posterClose=m.pageUrl ? `</a>` : "";
 
-  const reviewButton=m.pageUrl
-    ? `<a href="${m.pageUrl}" class="trailer" style="display:block;text-align:center;text-decoration:none;background:#e50914">READ REVIEW →</a>`
-    : "";
+const reviewbutton=m.pageUrl
+  ? `<a href="${m.pageUrl}" class="trailer" style="display:block;text-align:center;text-decoration:none;background:#e50914">READ ARTICLE →</a>`
+  : "";
+  
 
   return `
     <article class="card" data-title="${m.title.toLowerCase()}" data-genre="${m.genre}">
