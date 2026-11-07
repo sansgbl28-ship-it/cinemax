@@ -6,9 +6,11 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#0b0b0f">
 
-<meta name="description" content="CINEMAX ZONE is your place to discover movie articles, reviews, story summaries, release information, official trailers and movie guides before you watch.">
+<meta name="description" content="Discover upcoming and popular movies with release dates, cast information, story guides, reviews and official trailers at CINEMAX ZONE.">
 
-<title>CINEMAX ZONE - Movie Articles, Reviews, Trailers & Movie Collection</title>
+<link rel="canonical" href="https://cinemaxzone.bond/">
+
+<<title>CINEMAX ZONE - Movie Guides, Reviews, Release Dates & Trailers</title>>
 
 <style>
 :root{
@@ -297,48 +299,31 @@ footer{
 </section>
 
 <section class="section" id="seo-content">
-
-  <h2>Discover Movies Before You Watch</h2>
+  <h2>Movie Guides, Reviews & Official Trailers</h2>
 
   <p>
-    Welcome to CINEMAX ZONE — a movie discovery website where you can
-    learn more about films before watching them. Explore movie articles,
-    reviews, story and synopsis guides, release dates, cast information,
-    movie facts, official trailers and selected movie collections.
+    CINEMAX ZONE is a movie discovery website for people who want
+    to learn more about a film before watching it. Explore movie
+    guides covering release dates, cast information, stories,
+    reviews, trailers and other useful details about upcoming
+    and popular movies.
   </p>
 
   <p>
-    Looking for a movie but want to know more about it first?
-    CINEMAX ZONE helps you discover what a film is about, who is in it,
-    when it is released, what the story is about and where to find its
-    official trailer.
+    From major 2026 releases to selected classic films, CINEMAX ZONE
+    brings together movie information in one place so you can quickly
+    discover what a film is about and decide what to watch next.
   </p>
 
-  <h2>Movie Articles, Reviews & Trailers</h2>
+  <h2>Upcoming Movies in 2026</h2>
 
   <p>
-    Read detailed movie articles and guides for popular upcoming releases
-    such as Avengers: Doomsday, The Hunger Games: Sunrise on the Reaping
-    and Godzilla Minus Zero. You can also explore other upcoming movies,
-    classic films and official trailers throughout CINEMAX ZONE.
+    Explore movies such as Avengers: Doomsday,
+    The Hunger Games: Sunrise on the Reaping,
+    Godzilla Minus Zero, The Cat in the Hat,
+    Dune: Part Three, The Odyssey, Project Hail Mary,
+    Supergirl and other upcoming releases.
   </p>
-
-  <h2>Popular Movies</h2>
-
-  <p>
-    Discover Avengers: Doomsday 2026,
-    The Hunger Games: Sunrise on the Reaping 2026,
-    Godzilla Minus Zero 2026,
-    The Odyssey 2026,
-    Project Hail Mary 2026,
-    Supergirl 2026,
-    Toy Story 5 2026,
-    Mortal Kombat II 2026,
-    The Batman Part II 2026,
-    Super Mario Galaxy 2026,
-    Ratatouille 2007 and Transformers 2007.
-  </p>
-
 </section>
 
 <!-- Adsterra 320x50 -->
@@ -373,8 +358,10 @@ footer{
   <div class="section-head">
 
     <div>
-      <h2>New Releases · 2026</h2>
-      <div class="sub">Film terbaru & coming soon</div>
+   <h2>New Movies & Upcoming Releases · 2026</h2>
+      <div class="sub">
+  Latest upcoming movie guides and information
+</div>
     </div>
 
   </div>
@@ -383,7 +370,7 @@ footer{
 
   <div style="margin-top:20px">
 
-    <a href="avengers-doomsday.html"
+   <a href="avengers-doomsday-2026.html"
        style="color:#fff;background:#e50914;padding:12px 18px;border-radius:7px;display:inline-block;font-weight:bold">
       Explore Avengers: Doomsday 2026 →
     </a>
@@ -811,12 +798,13 @@ function card(m){
     ? `</a>`
     : "";
 
-  const reviewbutton=m.pageUrl
+const reviewbutton=m.pageUrl
     ? `<a href="${m.pageUrl}"
          class="trailer"
          style="display:block;text-align:center;text-decoration:none;background:#e50914">
-         READ ARTICLE →
+         READ GUIDE →
        </a>`
+    : trailerButton;
     : "";
 
   return `
