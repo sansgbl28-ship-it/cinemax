@@ -577,6 +577,95 @@ grid-template-columns:1fr
 
 }
 
+.related-stories{
+  margin:50px 0 35px;
+}
+
+.related-title{
+  font-size:28px;
+  margin-bottom:22px;
+  color:#fff;
+}
+
+.story-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
+}
+
+.story-card{
+  display:block;
+  background:#17171b;
+  border:1px solid #29292f;
+  border-radius:14px;
+  overflow:hidden;
+  text-decoration:none;
+  color:#fff;
+  transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;
+}
+
+.story-card:hover{
+  transform:translateY(-4px);
+  border-color:#e50914;
+  box-shadow:0 8px 25px rgba(0,0,0,.35);
+}
+
+.story-card img{
+  width:100%;
+  height:210px;
+  object-fit:cover;
+  display:block;
+}
+
+.story-content{
+  padding:18px;
+}
+
+.story-label{
+  display:inline-block;
+  color:#e50914;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.8px;
+  margin-bottom:8px;
+}
+
+.story-content h3{
+  font-size:20px;
+  line-height:1.3;
+  margin:0 0 10px;
+  color:#fff;
+}
+
+.story-content p{
+  font-size:14px;
+  line-height:1.6;
+  color:#aaa;
+  margin:0 0 15px;
+}
+
+.story-link{
+  color:#fff;
+  font-size:13px;
+  font-weight:800;
+}
+
+@media(max-width:700px){
+
+  .story-grid{
+    grid-template-columns:1fr;
+  }
+
+  .story-card img{
+    height:200px;
+  }
+
+  .related-title{
+    font-size:24px;
+  }
+
+}
+
 </style>
 
 </head>
@@ -1260,6 +1349,75 @@ Until then, the biggest mystery remains the same:
 <strong>what exactly does Doctor Doom want, and why are so many Marvel universes being pulled into the same conflict?</strong>
 </p>
 
+<!-- RELATED DOOMSDAY STORIES -->
+<section class="related-stories">
+
+  <h2 class="related-title">More Avengers: Doomsday Stories</h2>
+
+  <div class="story-grid">
+
+    <a class="story-card" href="/robert-downey-jr-doctor-doom-avengers-doomsday.html">
+
+      <img
+        src="https://lumiere-a.akamaihd.net/v1/images/g_disneymovies_avengersdoomsday_dr_doom_6cc246af.jpeg?region=0%2C0%2C1300%2C730"
+        alt="Robert Downey Jr. as Doctor Doom in Avengers: Doomsday"
+        loading="lazy"
+      >
+
+      <div class="story-content">
+
+        <span class="story-label">AVENGERS: DOOMSDAY</span>
+
+        <h3>
+          Robert Downey Jr. as Doctor Doom? The Avengers: Doomsday Mystery
+        </h3>
+
+        <p>
+          Why is Robert Downey Jr. returning to Marvel as Doctor Doom?
+          The latest details behind his shocking Avengers: Doomsday role...
+        </p>
+
+        <span class="story-link">
+          Read Full Story →
+        </span>
+
+      </div>
+
+    </a>
+
+
+    <a class="story-card" href="/tobey-maguire-avengers-doomsday.html">
+
+      <img
+        src="https://www.slashfilm.com/img/gallery/heres-how-sam-raimi-reacted-to-seeing-tobey-maguire-play-peter-parker-again-in-spider-man-no-way-home/l-intro-1651629623.jpg"
+        alt="Tobey Maguire as Spider-Man in Avengers: Doomsday rumors"
+        loading="lazy"
+      >
+
+      <div class="story-content">
+
+        <span class="story-label">SPIDER-MAN RUMOR</span>
+
+        <h3>
+          Tobey Maguire in Avengers: Doomsday? Spider-Man vs X-Men
+        </h3>
+
+        <p>
+          Could Tobey Maguire return as Spider-Man and face Wolverine
+          and the X-Men? Here's what the latest rumors are saying...
+        </p>
+
+        <span class="story-link">
+          Read Full Story →
+        </span>
+
+      </div>
+
+    </a>
+
+  </div>
+
+</section>
 
 <div class="keyword-box">
 
